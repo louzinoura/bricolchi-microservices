@@ -1,0 +1,8 @@
+com\example\geoservice\dto\AnnonceDto.class
+com\example\geoservice\dto\AnnoncePageDto.class
+com\example\geoservice\util\HaversineUtil.class
+com\example\geoservice\model\GeoResponse.class
+com\example\geoservice\service\GeoService.class
+com\example\geoservice\model\GeoRequest.class
+com\example\geoservice\controller\GeoController.class
+com\example\geoservice\GeolocationServiceApplication.class

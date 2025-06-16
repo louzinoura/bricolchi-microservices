@@ -3,6 +3,8 @@ import { AuthProvider, useAuth } from "./context/AuthContext";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
 import Profile from "./components/Profile";
+import Annonce from "./components/Annonce";
+// import AnnonceDetaile from "./components/AnnonceDetail";
 
 // Composant qui gère le loading et le routing
 function AppRoutes() {
@@ -14,10 +16,13 @@ function AppRoutes() {
 
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/login" />} />
+      <Route path="/" element={<Navigate to="/register" />} />
       <Route path="/login" element={<LoginForm />} />
       <Route path="/register" element={<RegisterForm />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="/annonce" element={<Annonce />} />
+  {/* <Route path="/annonce/:id" element={<AnnonceDetail />} /> */}
+   {/* Create this later */}
     </Routes>
   );
 }

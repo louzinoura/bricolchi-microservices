@@ -17,7 +17,10 @@ public class AuthController {
 
     @Autowired
     private AuthService authService;
-
+    @GetMapping("/health")
+    public ResponseEntity<String> healthCheck() {
+        return ResponseEntity.ok("Auth Service is UP");
+    }
     @PostMapping("/register")
     public ResponseEntity<String> register(@Valid @RequestBody RegisterRequest request) {
         try {
